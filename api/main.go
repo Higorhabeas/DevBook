@@ -11,6 +11,6 @@ func main() {
 	fmt.Println("Rodando API!")
 
 	r := router.Gerar()
-
+	//levanta a aplicação
 	log.Fatal(http.ListenAndServe(":5000", r))
 }
