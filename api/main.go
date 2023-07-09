@@ -13,7 +13,7 @@ func main() {
 	config.Carregar()
 	r := router.Gerar()
 
-	fmt.Println(config.SecretKey)
+	//fmt.Println(config.SecretKey)
 
 	fmt.Printf("Escutando na porta %d", config.Porta)
 	//levanta a aplicação
