@@ -42,7 +42,7 @@ func (usuario *Usuario) validar(etapa string) error {
 	}
 
 	if erro := checkmail.ValidateFormat(usuario.Email); erro != nil {
-		return errors.New("O e-mail inserido é inválido.")
+		return errors.New("O e-mail inserido é inválido")
 	}
 
 	if etapa == "cadastro" && usuario.Senha == "" {
